@@ -1,0 +1,576 @@
+@media(max-width:1115px ) {
+  .home-car {
+    background-image: none;
+  }
+ 
+   
+  .map .img-car {
+    position: absolute;
+    top:7rem;
+    left:26rem;
+  }
+  
+  .map .img-car>img {
+    width:45%;
+  }
+
+  .features-card-1 {
+    top: 9rem;
+    left:16rem;
+  }
+  
+  .features-card-2 {
+    top: 16rem;
+    right:18rem;
+  }
+  
+  .features-card-3 {
+    left:16rem;
+    bottom: 12rem;
+  }
+ 
+  
+  .Luxury-Cars {
+    position: relative;
+    padding-top: var(--padding1);
+    padding-bottom: var(--padding1);    margin-left: 1%;
+    text-align: center;
+  }
+
+  .head-lux {
+    padding-bottom:5rem;
+    text-align: center;
+    margin-right:1%;
+  }
+
+  .Luxury-Cars .container.grid  {
+    grid-template-columns: repeat(2 ,240px);
+    grid-template-rows: repeat(2 ,240px);
+    gap:10%;
+  margin-left:24%;
+
+  }
+
+  .offer {
+    position: relative;
+    right:1%;
+    padding-top:20%;
+  }
+  
+.offer-bg {
+  position: absolute;
+  top: 0;
+  width: 103%;
+  height: 190%;
+  left:-40px;
+  border-radius: 10px;
+}
+
+.footer{
+  overflow: hidden;
+}
+
+.footer .container .row {
+  display: grid;
+  grid-template-columns: repeat(2 ,250px);
+}
+
+.footer-col {
+  margin: 30px;
+}
+}
+
+/* ******************************************************** */
+@media (max-width: 767px) {
+
+  .nav-bar.nav-blur {
+    position:fixed;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    overflow: hidden;
+  }
+
+
+  .home-car {
+    background-image: none;
+  }
+
+  /* Header nav */
+  .nav-bar .container {
+    justify-content: space-around;
+    gap: 30px;
+
+  }
+
+  .nav-bar .container .link-nav-cont {
+    position: fixed;
+    transform: translatex(-300%);
+    width: 65%;
+    display: block;
+    padding: 15px;
+    background-color: rgb(72, 73, 73);
+    top: 7rem;
+    text-align: center;
+    border-radius: 15px;
+    z-index: -1;
+  }
+
+  .nav-bar .container .link-nav-cont li {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 1rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .nav-bar .container .link-nav-cont li:hover {
+    background-color: #777;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .nav-bar .container .link-nav-cont li:hover a {
+    color: rgb(41, 143, 245);
+  }
+
+  .nav-bar .container .link-nav-cont.show {
+    position: fixed;
+    transform: translatex(-2%);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  /* ******************************************************** */
+
+  .nav-bar .burgers {
+    position: relative;
+    display: block;
+  }
+
+  .nav-bar .burgers span:nth-of-type(1) {
+    top: px;
+    transform-origin: left center;
+  }
+
+  .nav-bar .burgers span:nth-of-type(2) {
+    top: 40%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  .nav-bar .burgers span:nth-of-type(3) {
+    top: 87%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+
+  .nav-bar .burgers .burger:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 1.8px;
+    left: 6px;
+    background-color: var(--color2);
+  }
+
+  .nav-bar .burgers .burger:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+    background-color: var(--color2);
+  }
+
+  .nav-bar .burgers .burger:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 23px;
+    left: 5px;
+    background-color: var(--color2);
+  }
+
+  /* **********************************************************0 */
+
+  /* main content website home */
+
+  .home-car .home-cont .home-cont-details .image {
+    position: relative;
+    top: 25px;
+    right: 10px;
+  }
+
+
+  /* About Car  */
+
+  
+.About-car .container {
+  flex-direction: column;
+}
+.About-car .container .About-image-car {
+  position: relative;
+  left: 0px;
+}
+.About-car .container .About-image-car img {
+  width:60%;
+  border-radius: 20px;
+}
+
+.About-car .container .About-image-car .Ab-img-cont {
+  position: absolute;
+  left:35%;
+}
+
+/*  part2  */
+/* --About image content */
+
+.About-car .container .About-image-content {
+  position: relative;
+  width:70%;
+  text-align:center;
+  top:30px;
+}
+
+.About-car .container .About-image-content>p {
+  width:100%;
+  color:var(--color1);
+  font-weight: bold;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* start Chose-brand  */
+
+
+.Chose-brand .container {
+
+  display: grid;
+  grid-template-columns: repeat(2 ,250px);
+  gap: 20px;
+}
+
+
+.Chose-brand .head-brand h1 {
+  color: var(--color1);
+  animation: opacity 2s infinite linear;  
+}
+
+@keyframes opacity {
+  0% ,100% {
+    opacity:0.5;
+    color: aliceblue;
+  }
+
+  50% {
+    opacity: 0.7;
+    color: var(--color2);
+  }
+
+
+  75% {
+    opacity: 1;
+    color: var(--color2);
+  }
+
+}
+
+/* start map */
+.map .images>img {
+  width: 80%;
+  margin: auto 10% ;
+  margin-top: 5%;
+}
+
+.features-card-1 {
+  top: 9rem;
+  left:20rem;
+}
+
+.features-card-2 {
+  top: 18rem;
+  right:23rem;
+}
+
+.features-card-3 {
+  left:23rem;
+  bottom: 10rem;
+}
+
+.map .img-car {
+  position: absolute;
+  top:12rem;
+  left:13rem;
+  animation: opacity  2s infinite alternate ;  
+
+}
+.map .img-car>img {
+  width: 45%;
+}
+
+/* start Featured Luxury Cars */
+.Luxury-Cars {
+  position: relative;
+  padding-top: var(--padding1);
+  padding-bottom: var(--padding1);    margin-left: 1%;
+  text-align: center;
+}
+
+.head-lux {
+  padding-bottom:5rem;
+  text-align: center;
+  margin-right:1%;
+}
+
+.Luxury-Cars .container.grid  {
+  grid-template-columns: repeat(2 ,240px);
+  grid-template-rows: repeat(2 ,240px);
+  gap:10%;
+  margin-left:2%;
+
+}
+
+
+/* Offer Section */
+.offer {
+  position: relative;
+  right:1%;
+  padding-top:20%;
+}
+
+.offer-bg {
+position: absolute;
+top: 0;
+width: 103%;
+height: 160%;
+left:-30px;
+border-radius: 10px;
+}
+
+}
+
+/* ****************************************************** */
+
+.show .burger {
+  transition: 0.5s;
+}
+
+
+/* **********************************************************0 */
+
+@media(max-width : 690px ) {
+
+
+/* Offer Section */
+.offer {
+  position: relative;
+  right:1%;
+  padding-top:50%;
+}
+
+.offer-bg {
+position: absolute;
+top: 0;
+width: 103%;
+height: 160%;
+left:-20px;
+border-radius: 10px;
+}
+
+.offer-data {
+  width: 100%;
+  margin-left:30%;
+}
+
+.offer-img {
+display: none;
+}
+
+}
+  /* media mobile   */
+
+@media(max-width : 490px ) {
+    
+  /* Header nav */
+
+.nav-bar .container {
+  justify-content: space-around;
+}
+
+
+.nav-bar .container .link-nav-cont.show {
+  width: 80%;
+  transform: translatex(-4%);
+
+}
+
+/* main content website home */
+.home-car .home-cont .home-cont-details .image img {
+  width: 40%;
+}
+.home-car .home-cont .home-cont-details .home-details-car ul {
+  position: relative;
+  justify-content: space-evenly;
+  left: 15px;
+}
+.home-car .home-cont .home-cont-details .home-details-car ul li {
+  margin-right: 20px;
+}
+
+.home-car .home-cont .home-cont-details .home-details-car ul li>p {
+  padding-top: 10px;
+}
+
+
+  /* About Car  */
+
+.About-car .container .About-image-car .Ab-img-cont {
+  position: absolute;
+  left:30%;
+  top:10px;
+  width: 30%;
+}
+
+/* start Chose-brand  */
+.Chose-brand .container {
+  display: grid;
+  grid-template-columns: repeat(1 ,250px);
+  gap: 25px;
+  animation: all 0.5s ease-in;
+}
+
+
+.Chose-brand .head-brand h1 {
+  color: var(--color1);
+  animation: opacity 2s alternate infinite;  
+}
+
+@keyframes opacity {
+  0% ,100% {
+    opacity:0.5;
+    color: aliceblue;
+  }
+
+  50% {
+    opacity: 1;
+    color: var(--color2);
+  }
+}
+
+/* start map */
+.map .images>img {
+  width: 80%;
+  margin: auto 10% ;
+  margin-top: 5%;
+}
+
+.features-card-1 {
+  top: 9rem;
+  left:3rem;
+}
+
+.features-card-2 {
+  top:22rem;
+  left:3rem;
+}
+
+.features-card-3 {
+  left:3rem;
+  bottom: 10rem;
+}
+.features-card {  
+  position:relative;
+  width:50px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.25rem;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  color: var(--title-color);
+  position: absolute;
+  animation: opacity 2s alternate infinite;  
+
+}
+.map .img-car {
+  position: absolute;
+  top:12rem;
+  left:10rem;
+  animation: opacity  2s infinite alternate ;  
+
+}
+.map .img-car>img {
+  width: 45%;
+}
+
+/* start Featured Luxury Cars */
+.Luxury-Cars {
+  position: relative;
+  padding-top: var(--padding1);
+  padding-bottom: var(--padding1);    margin-left: 1%;
+  text-align: center;
+}
+
+.head-lux {
+  padding-bottom:5rem;
+  text-align: center;
+  margin-right:1%;
+}
+
+.Luxury-Cars .container.grid  {
+  grid-template-columns: repeat(1 ,240px);
+  grid-template-rows: repeat(2 ,240px);
+  gap:5%;
+  margin-left:18%;
+
+}
+
+  
+.card .img {
+  width:40%;
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+
+/* Offer Section */
+.offer {
+  position: relative;
+  right:1%;
+  padding-top:130%;
+}
+
+.offer-bg {
+position: absolute;
+top: 0;
+width: 103%;
+height: 160%;
+left:-15px;
+border-radius: 10px;
+}
+
+.offer-data {
+  width: 100%;
+  margin-left:0%;
+}
+
+.offer-img {
+display: none;
+}
+
+.logos-img {
+  display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
