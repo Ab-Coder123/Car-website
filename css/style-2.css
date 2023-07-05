@@ -30,7 +30,7 @@ h3 {
   font-size: 19px !important;
 }
 h4 {
-  font-size: 16px !important;
+  font-size: 16px ;
 }
 h5 {
   font-size: 13px !important;
@@ -1068,18 +1068,19 @@ button:hover {
 
 /* Footer Section */
 .footer {
+  background-color: rgb(30, 39, 39);
+  padding: 70px 0;
   text-align: center;
 }
-.row{
+.footer .container{
   display: grid;
   grid-template-columns: repeat(4 ,250px);
   grid-template-rows: repeat(250px);
+  justify-content: center;
+  align-items: center;
 }
 
-.footer{
-  background-color: rgb(30, 39, 39);
-    padding: 70px 0;
-}
+
 .footer-col{
    width: 40%;
    padding: 0 100px;
@@ -1128,18 +1129,23 @@ button:hover {
 	padding-left: 8px;
 }
 
+.footer-col .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-col .social-links a{
 	display: inline-block;
-	height: 40px;
-	width: 40px;
+	height: 20px;
+	width: 150px;
 	background-color: rgba(255,255,255,0.2);
-  margin: 5px;
+  margin: 10px;
   text-align: center;
-	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+  padding: 10px;
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
@@ -1166,10 +1172,10 @@ button:hover {
 
 /* For Small Devices */
 @media screen and (max-width: 320px) {
-  .container {
+  /* .container {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
+  } */
 
   .home-car {
     column-gap: 2rem;
